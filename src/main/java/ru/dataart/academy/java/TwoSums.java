@@ -17,9 +17,7 @@ public class TwoSums {
         while (first < last) {
             int s = nums[first] + nums[last];
             if (s == target) {
-                result = new int[2];
-                result[0] = nums[first];
-                result[1] = nums[last];
+                result = new int[]{nums[first], nums[last]};
                 return result;
             } else {
                 if (s < target) {
