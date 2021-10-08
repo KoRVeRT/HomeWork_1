@@ -15,12 +15,12 @@ public class TwoSums {
         int first = 0;
         int last = nums.length - 1;
         while (first < last) {
-            int s = nums[first] + nums[last];
-            if (s == target) {
+            int sum = nums[first] + nums[last];
+            if (sum == target) {
                 result = new int[]{nums[first], nums[last]};
                 return result;
             } else {
-                if (s < target) {
+                if (sum < target) {
                     first++;
                 } else {
                     last--;
